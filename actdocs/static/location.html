@@ -1,0 +1,89 @@
+[% WRAPPER ui title = "Location" %]
+[% PROCESS _conf/main %]
+
+<div class="row">
+    <div class="col-md-12 hidden-xs">
+    </div>
+</div>
+<div class="row">
+    <div class="h1 col-xs-12">Conference Location</div>
+</div>
+
+<div class="alert alert-warning" role="alert"><b>Update (June 9, 2016):</b> The
+cutoff date for group rate reservations at the hotel has passed.   We have been
+informed by the hotel that they are still trying to honor the rate for attendees as
+rooms are available.   Although there is <b>no guarantee</b> that you will still be able to
+get a room, please call the hotel directly (not the reservation hotline) and 
+ask if there are still rooms available for YAPC for the dates you need.</div>
+
+<div class="row">
+   <div class="col-xs-12 col-sm-5 col-md-3">
+       <div class="location">
+           <span class="location-name">DoubleTree Orlando Downtown</span>
+           <div class="location-detail">
+               <span class="location-cat">Address</span>
+               <span class="location-item">
+                   60 South Ivanhoe Boulevard,<br />
+                   Orlando, Florida, 32804
+               </span>
+               <span class="location-cat">Room rate (conference rate)</span>
+               <span class="location-item">
+                   Reserve by June 1, 2016<br>
+                   $119 per night<br>
+[% IF 0 %]
+                   <a href="https://resweb.passkey.com/Resweb.do?mode=welcome_ei_new&eventID=14545975">Reservation link</a>
+[% END %]
+               </span>
+               <span class="location-cat">Hotel Telephone</span>
+               <span class="location-item">
+                   +1-866-247-3571<br>
+                   Mention "YAPC" event, Group "16Y"
+               </span>
+           </div>
+       </div>
+       <img src="http://doubletree3.hilton.com/resources/media/dt/MCOODDT/en_US/img/shared/full_page_image_gallery/main/DT_hotelexterior2_3_677x380_FitToBoxSmallDimension_UpperCenter.jpg" width="100%">
+   </div>
+   <div class="col-xs-12 col-sm-7 col-md-9">
+       <div class="h2">Room sharing</div>
+       <p>If you are looking to split a room, see <a href="[% make_uri( 'wiki?node=WhoIsStayingWhere' ) %]">The Wiki</a> for assistance.</p>
+
+       <div class="h2">Getting to the hotel</div>
+
+       <p>(For information on getting around town, see <a href="[% make_uri( 'wiki?node=TransportationOptions' ) %]">The Wiki</a>)</p> 
+
+       <div class="row">
+           <div class="col-sm-12 col-md-7">
+               <p>If you are arriving from Orlando International Airport, you
+               will have several options for getting to the hotel.    For your
+               convenience, we have negotiated a discount for YAPC attendees
+               with Mears Transport Group.  The Perl Foundation neither
+               endorses nor receives compensation from this business.</p>
+
+	       <h4>Super Shuttle</h4>
+	       <p>Super shuttle has provided a <a href="http://groups.supershuttle.com/perlfoundation2016.html" target="_blank">discounted rate for YAPC.</a>
+	       Per person rate: One-Way 18.00. Round trip 36.00</p>
+
+	       <h4>MEARS</h4>
+               <p>Mears motor shuttle motor shuttle ticket counters are located
+               on LEVEL 1 at the airport.</p>
+
+               <p>You may <a href="[% make_uri( '/yn2016-transport-coupon.pdf' ) %]">print this coupon</a> and purchase a ticket at the counter, or pre-book your shuttle using <a href="https://secure.mearstransportation.com/shuttles/default.aspx?referrer=521494050">this link.</a>  Either way, you must visit the counter in the airport to receive your ticket.</p>
+           </div>
+           <div class="col-md-5 hidden-sm">
+               <center>
+                   <a href="https://secure.mearstransportation.com/shuttles/default.aspx?referrer=521494050"><img src="[% make_uri('images/mears-transport-group.jpg') %]"><br>
+                       Click here to book a shuttle.</a>
+               </center>
+           </div>
+	   
+       </div>
+       <div class="h2">Map</div>
+
+       <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=208330880442074395860.0004df4e335781a4526be&amp;ie=UTF8&amp;ll=28.465388,-81.411655&amp;spn=0.188085,0.206738&amp;t=m&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=208330880442074395860.0004df4e335781a4526be&amp;ie=UTF8&amp;ll=28.465388,-81.411655&amp;spn=0.188085,0.206738&amp;t=m&amp;source=embed" style="color:#0000FF;text-align:left" target="_blank">YAPC 2016 Locations</a> in a larger map</small>
+       <a id="map"></a>
+   </div>
+</div>
+
+
+
+[% END %]
